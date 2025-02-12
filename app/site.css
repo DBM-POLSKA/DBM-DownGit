@@ -1,0 +1,174 @@
+body {
+  font-family: sans-serif, arial;
+  color: #2c2f33;
+  background-image: url("https://media.discordapp.net/attachments/1301409004248891443/1339326245761974364/background.gif?ex=67ae5044&is=67acfec4&hm=551f43e720a5b4545bfd3efa4f4dc78c0202a9d62e079c3735f104c772fbfd5c&=&width=1080&height=607");
+  background-color: #252525;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+a {
+  color: rgb(0, 102, 255);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(0, 102, 255);
+  transform: scale(1.05);
+}
+
+img {
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.btn-outline-light {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #5a5a5a;
+  background-color: #3a3f47;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.btn-outline-light:hover,
+.btn-outline-light:focus,
+.btn-outline-light:active,
+.btn-outline-light.active,
+.open > .dropdown-toggle .btn-outline-light {
+  color: #dcdcdc;
+  background-color: #4b5b6a;
+  border-color: #4b5b6a;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home .center-row {
+  float: none;
+  margin: auto;
+  padding-bottom: 1em;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.home .vertical-space {
+  float: none;
+  margin: auto;
+  padding-bottom: 3em;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.home h1 a {
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.home h1 a:hover {
+  text-decoration: none;
+  color: #da0000;
+}
+
+.home .processing-img {
+  width: 4em;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
+
+.home .download-link-box {
+  resize: vertical;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .download-link-box:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.home .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.discord-link {
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dbm-title {
+  font-weight: 700;
+}
+
+.btn-custom {
+  background-color: #8d8d8d;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #8d8d8d;
+}
+
+/**********************************/
+
+.toast-down {
+  background-image: url("../res/images/warning.png") !important;
+  background-color: #8c8c8c;
+  animation: fadeInToast 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInToast {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
