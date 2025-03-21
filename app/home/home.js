@@ -29,7 +29,7 @@ homeModule.config([
           var templateUrl = "https?://github.com/.+/.+";
           var downloadUrlInfix = "#/home?url=";
           var downloadUrlPrefix =
-            "https://shadow64gg.github.io/DBM-DownGit/" + downloadUrlInfix;
+            "https://dbm-polska.github.io/DBM-DownGit/" + downloadUrlInfix;
 
           if ($routeParams.url) {
             $scope.url = $routeParams.url;
